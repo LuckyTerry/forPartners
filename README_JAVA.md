@@ -11,9 +11,8 @@
     - [Elasticsearch](#elasticsearch)
         - [倒排索引](#倒排索引)
 - [系统设计](#系统设计)
-    - [常用框架](#常用框架)
-        - [Spring](#spring)
-        - [MyBatis](#mybatis)
+    - [MyBatis](#MyBatis)
+    - [Servlet容器](#Servlet容器)
     - [认证授权(JWT、SSO)](#认证授权)
         - [JWT](#JWT)
         - [SSO](#SSO)
@@ -100,6 +99,8 @@
 - redis单例、集群
 - lua脚本
 - **缓存雪崩，缓存穿透，缓存击穿**
+- 主从机制
+- 跳表
 
 * [Redis 总结](docs/database/Redis/Redis.md)
 * [Redlock分布式锁](docs/database/Redis/Redlock分布式锁.md)
@@ -121,19 +122,18 @@ TODO
 
 ## 系统设计
 
-### 常用框架
-
-#### Spring
-
-1. [Spring 学习与面试](docs/system-design/framework/spring/Spring.md)
-2. **[Spring 常见问题总结](docs/system-design/framework/spring/SpringInterviewQuestions.md)**
-3. [Spring中 Bean 的作用域与生命周期](docs/system-design/framework/spring/SpringBean.md)
-4. [SpringMVC 工作原理详解](docs/system-design/framework/spring/SpringMVC-Principle.md)
-5. [Spring中都用到了那些设计模式?](docs/system-design/framework/spring/Spring-Design-Patterns.md)
-
-#### MyBatis
+### MyBatis
 
 - [MyBatis常见面试题总结](docs/system-design/framework/mybatis/mybatis-interview.md)
+
+### Servlet容器
+
+- tomcat
+- jetty
+- undertow
+- netty
+
+todo
 
 ### 认证授权
 
@@ -279,23 +279,33 @@ todo
 
 高可用描述的是一个系统在大部分时间都是可用的，可以为我们提供服务的。高可用代表系统即使在发生硬件故障或者系统升级的时候，服务仍然是可用的 。相关阅读： **《[如何设计一个高可用系统？要考虑哪些地方？](docs/system-design/website-architecture/如何设计一个高可用系统？要考虑哪些地方？.md)》** 。
 
-### 微服务
+### 微服务=
 
-#### SpringMVC
+#### Spring
 
-TODO
-
-#### SpringWebflux
-
-TODO
+1. [Spring 学习与面试](docs/system-design/framework/spring/Spring.md)
+2. **[Spring 常见问题总结](docs/system-design/framework/spring/SpringInterviewQuestions.md)**
+3. [Spring中 Bean 的作用域与生命周期](docs/system-design/framework/spring/SpringBean.md)
+4. [SpringMVC 工作原理详解](docs/system-design/framework/spring/SpringMVC-Principle.md)
+5. [Spring中都用到了那些设计模式?](docs/system-design/framework/spring/Spring-Design-Patterns.md)
 
 #### SpringBoot
+
+- beanFactory
+- bean单例问题
+- springboot的启动过程
+- spring容器的启动过程
+- to be added
 
 - **[SpringBoot 指南/常见面试题总结](https://github.com/Snailclimb/springboot-guide)**
 
 #### Spring Cloud
 
 - [ 大白话入门 Spring Cloud](docs/system-design/micro-service/spring-cloud.md)
+
+#### SpringWebflux
+
+TODO
 
 #### 配置中心
 

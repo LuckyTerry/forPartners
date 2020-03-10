@@ -3,7 +3,7 @@
 ## 目录
 
 - [背景](#背景)
-- [感谢](#感谢)
+- [铭谢](#铭谢)
 - [网络](#网络)
 - [操作系统](#操作系统)
     - [Linux](#linux)
@@ -18,7 +18,6 @@
     - [JVM](#jvm)
     - [泛型](#泛型)
     - [反射](#反射)
-    - [Servlet容器](#Servlet容器)
     - [IO](#IO)
     - [Java 8](#Java 8)
     - [Java内存模型](#Java内存模型)
@@ -41,9 +40,9 @@
 
 在公司教科书式的变相裁员下，Java团队奋力抗争，浴火重生！
 
-## 感谢
+## 铭谢
 
-**感谢** [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide) 项目
+**铭谢** [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide) 项目
 
 ## 网络
 
@@ -80,6 +79,8 @@
 
 TODO
 
+设计模式 :[设计模式系列文章](docs/system-design/设计模式.md)
+
 ## Java
 
 ### 基础
@@ -108,6 +109,9 @@ TODO
 
 ### 并发
 
+- CAS
+- 乐观锁和悲观锁
+
 **面试题总结：**
 
 1. **[Java 并发基础常见面试题总结](docs/java/Multithread/JavaConcurrencyBasicsCommonInterviewQuestionsSummary.md)**
@@ -135,19 +139,31 @@ TODO
 
 ### 泛型
 
-TODO
-
-### Servlet容器
+- 类型擦除
+- 协变逆变（PECS）
 
 TODO
 
 ### IO
 
+- BIO
+- NIO
+- selct
+- epoll
+- netty nio
+
 TODO
+
+**I/O** ：[BIO,NIO,AIO 总结 ](docs/java/BIO-NIO-AIO.md)
 
 ### Java 8
 
+- 函数式接口
+- Stream流
+
 TODO
+
+**Java 8**  ：[Java 8 新特性总结](docs/java/What's%20New%20in%20JDK8/Java8Tutorial.md)、[Java 8 学习资源推荐](docs/java/What's%20New%20in%20JDK8/Java8教程推荐.md)、[Java8 forEach 指南](docs/java/What's%20New%20in%20JDK8/Java8foreach指南.md)
 
 ### Java内存模型
 
@@ -163,10 +179,8 @@ TODO
 
 ### 其他
 
-1. **I/O** ：[BIO,NIO,AIO 总结 ](docs/java/BIO-NIO-AIO.md)
-2. **Java 8**  ：[Java 8 新特性总结](docs/java/What's%20New%20in%20JDK8/Java8Tutorial.md)、[Java 8 学习资源推荐](docs/java/What's%20New%20in%20JDK8/Java8教程推荐.md)、[Java8 forEach 指南](docs/java/What's%20New%20in%20JDK8/Java8foreach指南.md)
-3.  **[Java 编程规范以及优雅 Java 代码实践总结](docs/java/Java编程规范.md)**
-4. 设计模式 :[设计模式系列文章](docs/system-design/设计模式.md)
+**[Java 编程规范以及优雅 Java 代码实践总结](docs/java/Java编程规范.md)**
+
 
 ## 面试指南
 
