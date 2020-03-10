@@ -2,8 +2,8 @@
 
 ## 目录
 
-- [背景]（#背景）
-- [开源Guide](#开源Guide)
+- [背景](#背景)
+- [感谢](#感谢)
 - [网络](#网络)
 - [操作系统](#操作系统)
     - [Linux](#linux)
@@ -27,16 +27,7 @@
     - [其他](#其他)
 - [数据库](#数据库)
     - [MySQL](#mysql)
-        - [layer分层](#layer分层)
-        - [ACID四大特性](#ACID四大特性)
-        - [索引相关](#索引相关)
-        - [锁相关](#锁相关)
-        - [分库分表](#分库分表)
     - [Redis](#redis)
-        - [五种数据类型](#五种数据类型)
-        - [构成五种数据结构的底层数据结构](#构成五种数据结构的底层数据结构)
-        - [单线程、守护线程、NIO 等](#单线程、守护线程、NIO 等)
-        - [redis单例、集群，lua脚本，缓存雪崩，缓存穿透，缓存击穿](#redis单例、集群，lua脚本，缓存雪崩，缓存穿透，缓存击穿)
     - [MongoDB](#mongodb)
         - [范式/反范式](#范式/反范式)
         - [分布式主键](#objectId作为唯一键)
@@ -47,8 +38,8 @@
         - [Spring](#spring)
         - [MyBatis](#mybatis)
     - [认证授权(JWT、SSO)](#认证授权)
-        - [SSO](#SSO)
         - [JWT](#JWT)
+        - [SSO](#SSO)
         - [SpringSecurity](#SpringSecurity)
     - [分布式](#分布式)
         - [一致性协议](#一致性协议)
@@ -117,7 +108,7 @@
 
 ## 感谢
 
-借鉴于[Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide)
+**感谢** [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide) 项目
 
 ## 网络
 
@@ -246,6 +237,12 @@ TODO
 
 ### MySQL
 
+- **ACID**
+- **索引**
+- **锁**
+- 分库分表
+- layer分层
+
 1. **[【推荐】MySQL/数据库 知识点总结](docs/database/MySQL.md)**
 2. **[阿里巴巴开发手册数据库部分的一些最佳实践](docs/database/阿里巴巴开发手册数据库部分的一些最佳实践.md)**
 3. **[一千行MySQL学习笔记](docs/database/一千行MySQL命令.md)**
@@ -256,6 +253,13 @@ TODO
 
 ### Redis
 
+- **五种数据类型**
+- 构成五种数据结构的底层数据结构
+- 单线程、守护线程、NIO
+- redis单例、集群
+- lua脚本
+- **缓存雪崩，缓存穿透，缓存击穿**
+
 * [Redis 总结](docs/database/Redis/Redis.md)
 * [Redlock分布式锁](docs/database/Redis/Redlock分布式锁.md)
 * [如何做可靠的分布式锁，Redlock真的可行么](docs/database/Redis/如何做可靠的分布式锁，Redlock真的可行么.md)
@@ -263,9 +267,14 @@ TODO
 
 ### MongoDB
 
-TODO
+- 范式/反范式
+- 分布式唯一主键
+
+todo
 
 ### Elasticsearch
+
+- 倒排索引
 
 TODO
 
@@ -292,19 +301,24 @@ TODO
 #### JWT
 
 - **[JWT 优缺点分析以及常见问题解决方案](docs/system-design/authority-certification/JWT-advantages-and-disadvantages.md)**
-- **[适合初学者入门 Spring Security With JWT 的 Demo](https://github.com/Snailclimb/spring-security-jwt-guide)**
 
 #### SSO(单点登录)
 
 SSO(Single Sign On)即单点登录说的是用户登陆多个子系统的其中一个就有权访问与其相关的其他系统。举个例子我们在登陆了京东金融之后，我们同时也成功登陆京东的京东超市、京东家电等子系统。相关阅读：**[SSO 单点登录看这篇就够了！](docs/system-design/authority-certification/sso.md)**
 
+#### SpringSecurity
+
+- **[适合初学者入门 Spring Security With JWT 的 Demo](https://github.com/Snailclimb/spring-security-jwt-guide)**
+
 ### 分布式
 
 [分布式相关概念入门](docs/system-design/website-architecture/分布式.md)
 
-#### Elasticsearch(分布式搜索引擎)
+#### 一致性协议
 
-提高搜索效率。常见于电商购物网站的商品搜索于分类。
+- Raft
+- Paxos
+- Zab协议(zookeeper自研)
 
 代办......
 
@@ -325,6 +339,11 @@ SSO(Single Sign On)即单点登录说的是用户登陆多个子系统的其中�
 
 **RocketMQ:**
 
+- 单例、集群
+- 死信队列的应用
+- 延迟队列的应用
+- **高可用部署**
+
 1. [RocketMQ 入门](docs/system-design/data-communication/RocketMQ.md)
 2. [RocketMQ的几个简单问题与答案](docs/system-design/data-communication/RocketMQ-Questions.md)
 
@@ -334,15 +353,53 @@ SSO(Single Sign On)即单点登录说的是用户登陆多个子系统的其中�
 2. [Kafka系统设计开篇-面试看这篇就够了](docs/system-design/data-communication/Kafka系统设计开篇-面试看这篇就够了.md)
 3. [【加餐】Kafka入门看这一篇就够了](docs/system-design/data-communication/Kafka入门看这一篇就够了.md)
 
+**EMQ**
+
+轻量级消息队列：EMQ(基于mqtt轻量级协议)
+
+- topic规则
+
+todo
+
 #### API 网关
 
 网关主要用于请求转发、安全认证、协议转换、容灾。
 
-- [浅析如何设计一个亿级网关(API Gateway)](docs/system-design/micro-service/API网关.md)
+[浅析如何设计一个亿级网关(API Gateway)](docs/system-design/micro-service/API网关.md)
 
-#### 唯一 id 生成
+#### 唯一id生成
 
--  [分布式id生成方案总结](docs/system-design/micro-service/分布式id生成方案总结.md)
+- UUID/GUID
+- 数据库自增ID
+- Twitter-Snowflake
+- 基于redis的分布式ID生成器
+- MongoDB的ObjectId
+- Zookeeper的znode
+- 百度的UidGenerator
+- 美团的Leaf
+- ecp-uid
+
+[分布式id生成方案总结](docs/system-design/micro-service/分布式id生成方案总结.md)
+
+#### 分布式锁
+
+- redis
+- redisson
+- zookeeper
+
+todo
+
+#### 分布式事务
+
+- 2PC
+- TCC
+- 阿里Seata
+
+todo
+
+#### 分布式任务调度
+
+todo
 
 #### ZooKeeper
 
@@ -368,6 +425,8 @@ SSO(Single Sign On)即单点登录说的是用户登陆多个子系统的其中�
 - [关于大型网站系统架构你不得不懂的10个问题](docs/system-design/website-architecture/关于大型网站系统架构你不得不懂的10个问题.md)
 
 #### 性能测试
+
+- jps、jstat、jmap、jstack、jvisualVM、阿里Arthas
 
 - [后端程序员也要懂的性能测试知识](https://articles.zsxq.com/id_lwl39teglv3d.html) （知识星球）
 
@@ -479,7 +538,7 @@ todo
 
 #### 目前的线上部署
 
-todo
+request -> dns -> loadBalancer -> nginx -> gateway -> aggregation -> service -> repository 
 
 ### 持续开发集成
 
