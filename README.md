@@ -25,7 +25,6 @@
     - [Java线程模型](#Java线程模型)
     - [JVM线程模型](#JVM线程模型)
     - [其他](#其他)
-- [Java学习常见问题汇总](#Java学习常见问题汇总)
 - [Web方向](#Web方向)
 - [Java方向](#Java方向)
 - [Android方向](#Android方向)
@@ -180,13 +179,17 @@ TODO
 7. **[【备战面试6】美团面试常见问题总结(附详解答案)](docs/essential-content-for-interview/PreparingForInterview/美团面试常见问题总结.md)**
 8. **[【备战面试7】一些刁难的面试问题总结](https://xiaozhuanlan.com/topic/9056431872)**
 
-## Java学习常见问题汇总
+## Web方向
 
-1. [Java学习路线和方法推荐](docs/questions/java-learning-path-and-methods.md)
-2. [Java培训四个月能学会吗？](docs/questions/java-training-4-month.md)
-3. [新手学习Java，有哪些Java相关的博客，专栏，和技术学习网站推荐？](docs/questions/java-learning-website-blog.md)
-4. [Java 还是大数据，你需要了解这些东西！](docs/questions/java-big-data)
-5. [Java 后台开发/大数据？你需要了解这些东西！](https://articles.zsxq.com/id_wto1iwd5g72o.html)（知识星球）
+[Web方向](./README_WEB.md)
+
+## Java方向
+
+[Java方向](./README_JAVA.md)
+
+## Android方向
+
+[Android方向](./README_ANDROID.md)
 
 ## 工具
 
@@ -194,30 +197,7 @@ TODO
 
 * [Git入门](docs/tools/Git.md)
 
-### Docker
-
-1. [Docker 基本概念解读](docs/tools/Docker.md)
-2. [一文搞懂 Docker 镜像的常用操作！](docs/tools/Docker-Image.md )
-
-### 其他
-
-- [阿里云服务器使用经验](docs/tools/阿里云服务器使用经验.md)
-
 ## 说明
-
-开源项目在于大家的参与，这才使得它的价值得到提升。感谢🙏有你！
-
-### JavaGuide介绍
-
-开源 JavaGuide 初始想法源于自己的个人那一段比较迷茫的学习经历。主要目的是为了通过这个开源平台来帮助一些在学习 Java 或者面试过程中遇到问题的小伙伴。
-
-*  **对于 Java 初学者来说：** 本文档倾向于给你提供一个比较详细的学习路径，让你对于Java整体的知识体系有一个初步认识。另外，本文的一些文章
-也是你学习和复习 Java 知识不错的实践；
-*  **对于非 Java 初学者来说：** 本文档更适合回顾知识，准备面试，搞清面试应该把重心放在那些问题上。要搞清楚这个道理：提前知道那些面试常见，不是为了背下来应付面试，而是为了让你可以更有针对的学习重点。
-
-Markdown 格式参考：[Github Markdown格式](https://guides.github.com/features/mastering-markdown/)，表情素材来自：[EMOJI CHEAT SHEET](https://www.webpagefx.com/tools/emoji-cheat-sheet/)。
-
-利用 docsify 生成文档部署在 Github pages: [docsify 官网介绍](https://docsify.js.org/#/)
 
 ### 关于转载
 
