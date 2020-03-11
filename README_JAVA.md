@@ -366,7 +366,7 @@ todo
 
 ### 架构图
 
-TODO
+![image](https://github.com/LuckyTerry/forPartners/blob/master/images/1.png)
 
 #### 业务架构图
 
