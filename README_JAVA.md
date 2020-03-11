@@ -59,7 +59,8 @@
         - [混合云方案](#混合云方案)
         - [目前的线上部署](#目前的线上部署)
     - [持续开发集成](#持续开发集成)
-        - 待运维补充
+        - [Jenkins](#Jenkins)
+        - [Gitlab](#Gitlab)
     - [个人真实案例](#个人真实案例)
         - 待大家补充
 - [面试指南](#面试指南)
@@ -393,7 +394,9 @@ request -> dns -> loadBalancer -> nginx -> gateway -> aggregation -> service -> 
 
 ### 持续开发集成
 
-TODO
+- [持续集成之理论篇](https://zhuanlan.zhihu.com/p/57021068)
+
+Start -> 获取JenkinsCICD文件 -> -> 拉取代码 -> mvn打包 -> 获取Dockerfile和yaml文件 -> 制作并上传Docker镜像 -> 部署服务 -> 清空工作区 -> End
 
 ### 个人真实案例
 
