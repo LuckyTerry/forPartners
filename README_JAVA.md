@@ -396,7 +396,7 @@ request -> dns -> loadBalancer -> nginx -> gateway -> aggregation -> service -> 
 
 - [持续集成之理论篇](https://zhuanlan.zhihu.com/p/57021068)
 
-Start -> 获取JenkinsCICD文件 -> -> 拉取代码 -> mvn打包 -> 获取Dockerfile和yaml文件 -> 制作并上传Docker镜像 -> 部署服务 -> 清空工作区 -> End
+Start -> 获取JenkinsCICD文件 -> 拉取代码 -> mvn打包 -> 获取Dockerfile和yaml文件 -> 制作并上传Docker镜像 -> 部署服务 -> 清空工作区 -> End
 
 ### 个人真实案例
 
