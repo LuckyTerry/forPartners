@@ -27,6 +27,7 @@
 - [Web方向](#Web方向)
 - [Java方向](#Java方向)
 - [Android方向](#Android方向)
+- [公司推荐](#公司推荐)
 - [工具](#工具)
     - [Git](#git)
     - [Docker](#docker)
@@ -212,6 +213,10 @@ TODO
 ## Android方向
 
 [Android方向](./README_ANDROID.md)
+
+## 公司推荐
+
+[公司推荐](docs/company.md)
 
 ## 工具
 
