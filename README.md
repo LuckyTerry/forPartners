@@ -129,6 +129,7 @@ TODO
 3. [乐观锁与悲观锁](docs/essential-content-for-interview/面试必备之乐观锁与悲观锁.md)
 4. [JUC 中的 Atomic 原子类总结](docs/java/Multithread/Atomic.md)
 5. [AQS 原理以及 AQS 同步组件总结](docs/java/Multithread/AQS.md)
+6. [JUC包实战指南](docs/java/Multithread/JUC包实战指南.md)
 
 ### JVM
 
