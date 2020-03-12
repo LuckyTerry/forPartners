@@ -415,6 +415,14 @@ TODO
 7. **[【备战面试6】美团面试常见问题总结(附详解答案)](docs/essential-content-for-interview/PreparingForInterview/美团面试常见问题总结.md)**
 8. **[【备战面试7】一些刁难的面试问题总结](https://xiaozhuanlan.com/topic/9056431872)**
 
+### 真实面试题
+
+Java编程思想5大原则？
+
+Spring的三种注入方式？
+
+Redis持久化机制？
+
 ## Java学习常见问题汇总
 
 1. [Java学习路线和方法推荐](docs/questions/java-learning-path-and-methods.md)
