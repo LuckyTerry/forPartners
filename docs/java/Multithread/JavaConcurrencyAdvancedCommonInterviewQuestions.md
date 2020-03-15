@@ -97,7 +97,7 @@ uniqueInstance 采用 volatile 关键字修饰也是很有必要的， uniqueIns
 
 但是由于 JVM 具有指令重排的特性，执行顺序有可能变成 1->3->2。指令重排在单线程环境下不会出现问题，但是在多线程环境下会导致一个线程获得还没有初始化的实例。例如，线程 T1 执行了 1 和 3，此时 T2 调用 getUniqueInstance() 后发现 uniqueInstance 不为空，因此返回 uniqueInstance，但此时 uniqueInstance 还未被初始化。
 
-使用 volatile 可以禁止 JVM 的指令重排，保证在多线程环境下也能正常运行。
+**使用 volatile 可以禁止 JVM 的指令重排，保证在多线程环境下也能正常运行。**
 
 ### 1.3. 讲一下 synchronized 关键字的底层原理
 
@@ -146,7 +146,7 @@ JDK1.6 对锁的实现引入了大量的优化，如偏向锁、轻量级锁、�
 
 锁主要存在四种状态，依次是：无锁状态、偏向锁状态、轻量级锁状态、重量级锁状态，他们会随着竞争的激烈而逐渐升级。注意锁可以升级不可降级，这种策略是为了提高获得锁和释放锁的效率。
 
-关于这几种优化的详细信息可以查看笔主的这篇文章：<https://gitee.com/SnailClimb/JavaGuide/blob/master/docs/java/Multithread/synchronized.md>
+关于这几种优化的详细信息可以查看笔主的[这篇文章](./synchronized.md)
 
 ### 1.5. 谈谈 synchronized和ReentrantLock 的区别
 

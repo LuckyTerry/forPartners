@@ -1,3 +1,30 @@
+<!-- TOC -->
+
+- [atomic](#atomic)
+- [locks](#locks)
+- [工具类](#工具类)
+    - [TimeUnit](#TimeUnit)
+    - [ThreadLocalRandom](#ThreadLocalRandom)
+    - [CountDownLatch](#CountDownLatch)
+    - [CyclicBarrier](#CyclicBarrier)
+    - [Semaphore](#Semaphore)
+- [执行类](#执行类)
+    - [Executors](#Executors)
+    - [ExecutorCompletionService](#ExecutorCompletionService)
+- [CompletableFuture](#CompletableFuture)
+    - [Exchanger](#Exchanger)
+    - [Phaser](#Phaser)
+    - [FutureTask](#FutureTask)
+    - [ForkJoin](#ForkJoin)
+    - [CountedCompleter](#CountedCompleter)
+- [集合类](#集合类)
+    - [队列双端队列](#队列双端队列)
+    - [列表集合](#列表集合)
+    - [字典](#字典)
+- [Stream类中的仿JUC实现](#Stream类中的仿JUC实现)
+
+<!-- /TOC -->
+
 # JUC包实战指南
 
 ## atomic
@@ -302,7 +329,9 @@ public static void main(String[] args) {
 
 ## 执行类
 
-### Executors、ThreadPoolExecutor 和 ScheduledThreadPoolExecutor
+### Executors
+
+Executors、ThreadPoolExecutor 和 ScheduledThreadPoolExecutor
 
 1. 类继承关系
 
@@ -1245,7 +1274,7 @@ isCompletedAbnormally不阻塞当前线程。getException方法返回Throwable�
 
 ## 集合类
 
-### 队列、双端队列
+### 队列双端队列
 
 - ArrayBlockingQueue
 - ConcurrentLinkedQueue
@@ -1258,7 +1287,7 @@ isCompletedAbnormally不阻塞当前线程。getException方法返回Throwable�
 - SynchronousQueue
 
 
-### 列表、集合
+### 列表集合
 
 - CopyOnWriteArrayList
 - CopyOnWriteArraySet
