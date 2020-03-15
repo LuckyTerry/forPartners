@@ -28,6 +28,7 @@ volatile
 ThreadLocal
 - ThreadLocal原理
 - ThreadLocal 内存泄露问题
+- ThreadLocal 之开放地址法（比较于HashMap的拉链法）
 - ThreadLocal 扩展之 transmittable-thread-local
 - ThreadLocal 扩展之 taskDecorator（executor, @Async, Hystrix）
 
@@ -39,6 +40,7 @@ Atomic
 - JUC 包中的原子类是哪4类?
 - AtomicInteger 的使用？
 - 简单介绍一下 AtomicInteger 类的原理？
+- LongAddr 相比较 AtomicLong？
 
 AQS
 - 什么是AQS？
