@@ -91,6 +91,7 @@
 5. [数据库索引总结](docs/database/MySQL%20Index.md)
 6. [事务隔离级别(图文详解)](docs/database/事务隔离级别(图文详解).md)
 7. [一条SQL语句在MySQL中如何执行的](docs/database/一条sql语句在mysql中如何执行的.md)
+8. [MVCC多版本并发控制](https://github.com/LuckyTerry/forPartners/blob/master/docs/database/MySQL.md)
 
 ### Redis
 

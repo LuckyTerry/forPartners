@@ -352,6 +352,9 @@ PizzaDeliveryStrategy deliveryStrategy = PizzaDeliverySystemConfiguration.getIns
 
 通过 `PizzaDeliverySystemConfiguration.getInstance()` 获取的就是单例的 `PizzaDeliverySystemConfiguration`
 
+
+上面这个例子不好，看这个 [枚举实现单例模式](https://github.com/LuckyTerry/forPartners/blob/master/docs/java/basic/%E7%94%A8%E5%A5%BDJava%E4%B8%AD%E7%9A%84%E6%9E%9A%E4%B8%BE%E7%9C%9F%E7%9A%84%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95.md) 文章尾部的叙述。
+
 ### 7.2 策略模式
 
 通常，策略模式由不同类实现同一个接口来实现的。
