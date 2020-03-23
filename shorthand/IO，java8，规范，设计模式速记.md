@@ -1,4 +1,7 @@
 # IO，java8，规范，设计模式速记
+
+[答案](../shortanswer/IO，java8，规范，设计模式速记)
+
 1. BIO,NIO,AIO 总结
 2. 同步与异步，阻塞与非阻塞  如何区分 “同步/异步 ”和 “阻塞/非阻塞” 呢？
 3. BIO (Blocking I/O) 通信模型
