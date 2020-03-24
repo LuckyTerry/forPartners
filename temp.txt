@@ -1,0 +1,7 @@
+Redis 脏读、幻读？
+Redis 分布式锁如何实现的？
+aop中before和around之间顺序是一定的吗？
+Service类的一个函数内部调用另一个标注了@Transactional的成员函数，是否事务生效？
+Bean的获取步骤，@Bean的生命周期，BeanFactory生命周期？
+
+Around

@@ -1,0 +1,31 @@
+public static void main(String[] args) {
+    int input = 4;
+    List<Integer> from = new ArrayList<Integer>();
+    for (int i = 0; i < 100; i++) {
+        from.add(i+1);
+    }
+    int idx = 0;
+    List<Integer> to = new ArrayList<Integer>();
+
+    while (from.size() >= input) {
+        idx = swap(from, to, idx, input);
+        List<Integer> temp = from;
+        from = to;
+        to = temp;
+    }
+    for (Integer integer : from) {
+        System.out.println(integer);
+    }
+}
+
+private static int swap(List<Integer> from, List<Integer> to, int idx, int input) {
+    to.clear();
+    for (Integer integer : from) {
+        if (++idx % input > 0) {
+            to.add(integer);
+        } else {
+            idx = 0;
+        }
+    }
+    return idx;
+}
