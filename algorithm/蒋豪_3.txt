@@ -1,9 +1,9 @@
-select temp.name, temp.drop_grade from 
+select st.name, temp.drop_grade from 
 (
-select st.name, (s16.score-s17.score) as drop_grade from interview.score s16 
+select s16.id, (s16.score-s17.score) as drop_grade from interview.score s16 
 inner join interview.score s17 on s16.id = s17.id 
-inner join interview.student st on st.id = s16.id
 where s16.`subject` = '化学' and s17.`subject` = '化学' and s16.year = 2016 and s17.year = 2017
 ) temp
+inner join interview.student st on st.id = temp.id
 where temp.drop_grade > 0 order by temp.drop_grade desc
 ;
