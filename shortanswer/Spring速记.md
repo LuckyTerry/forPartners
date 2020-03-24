@@ -1,7 +1,4 @@
 # 框架速记
-
-[Spring速记](../shortanswer/Spring速记.md)
-
 5. SpringAOP实现原理
 6. 静态代理、JDK动态代理、CGLIB动态代理
 7. Spring AOP 基于AspectJ注解如何实现AOP
