@@ -1,0 +1,4 @@
+select st.name, count(*) as cnt from interview.score sc
+inner join interview.student st on st.id = sc.id
+where sc.score < 60 and sc.year = 2017
+group by st.name having cnt > 2;
