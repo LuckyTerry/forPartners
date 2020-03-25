@@ -1,4 +1,7 @@
 #  认证授权，SSO，分布式，基础速记
+
+[答案](../shortanswer/认证授权，SSO，分布式，基础速记.md)
+
 1. 认证 (Authentication) 和授权 (Authorization)的区别是什么？
 2.  什么是Cookie ? Cookie的作用是什么?如何在服务端使用 Cookie ?
 3. Cookie 和 Session 有什么区别？如何使用Session进行身份验证？
