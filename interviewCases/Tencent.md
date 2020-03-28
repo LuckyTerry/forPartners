@@ -3,8 +3,9 @@
 ## 一面，电话面试
 
 1. spring 怎么判断产生循环依赖
-- 对于构造器循环依赖的情况，spring容器会正在创建的bean
-- todo
+- 对于构造器循环依赖的情况，spring容器会为正在创建的bean创建标识符并缓存，那如果发现标识符已经存在时，就会抛出异常
+- 对于Setter单例循环依赖的情况，spring会维护一个beanName对应的半成品Bean 和 beanName对应的beanFactory，通过递归不断创建半成品bean，回溯时候则依次设置属性的reference。 [高频面试题：Spring 如何解决循环依赖？](https://zhuanlan.zhihu.com/p/84267654)
+- 对于Setter原型循环依赖情况，spring不会缓存半成品bean，因此无法解决，会抛出异常
 2. innodb索引结构有哪些
 - B+树
 - Hash树
