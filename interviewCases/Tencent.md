@@ -2,7 +2,7 @@
 
 ## 一面，电话面试
 
-1. spring 怎么判断产生循环依赖 [Spring循环依赖的三种方式以及解决办法](https://www.cnblogs.com/liuqing576598117/p/11227007.html)
+1. spring 怎么判断产生循环依赖 [Spring循环依赖的三种方式以及解决办法](https://www.cnblogs.com/liuqing576598117/p/11227007.html) [spring中的循环依赖解决方案](https://www.jianshu.com/p/b65c57f4d45d)
 - 对于构造器循环依赖的情况，spring容器会为正在创建的bean创建标识符并缓存，那如果发现标识符已经存在时，就会抛出异常；
     - 可以采用@Lazy延时加载的办法来解决，原理是注入的是spring生成的代理类，只有第一次使用的时候才会加载。
 - 对于Setter单例循环依赖的情况，spring会维护一个beanName对应的半成品Bean 和 beanName对应的beanFactory，通过递归不断创建半成品bean，回溯时候则依次设置属性的reference。 [高频面试题：Spring 如何解决循环依赖？](https://zhuanlan.zhihu.com/p/84267654)
