@@ -123,7 +123,7 @@
 - 问题：
     - 新连接可能会被延迟或重复的FIN影响
     - 服务段可能会被客户端回复的RST影响
-    - （补充）time wait bucket table overflow 问题：time-wait状态的连接超过了系统定义的阈值
+    - （补充）time wait bucket table overflow 问题：time-wait状态的连接超过了系统定义的阈值（默认1870000，改为5000较好）
         - 可以加 tcp_tw_reuse 进行优化
 ### 24. **(2)cms和g1的区别   g1在什么场景下使用**
 - 区别

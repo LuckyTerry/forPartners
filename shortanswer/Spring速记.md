@@ -116,42 +116,24 @@ test OK
 - BatchExecutor，没用过。。。
 44. 为什么说 Mybatis 是半自动 ORM 映射工具？它与全自动的区别在哪里？
 - 关联查询需要手动编写sql实现
-45. 21.说一下springboot的启动过程？平时开发中都用哪些注解？
-spring容器的启动过程？2
-- todo
-12、spring中Bean的作用域，springMVC的controller是线程安全的吗？怎么去保证线程安全呢？
+45. 说一下springboot的启动过程？平时开发中都用哪些注解？
+- 说一下springboot的启动过程？
+    - 构造函数初始化
+        - 会判断WebType，初始化Initializer、Listener(pub/sub)，初始化主类XxxApplication
+    - 执行run方法
+        - 创建一个RunListeners，作为启动过程中事件发送和分发的管理器
+        - 创建并初始化ConfigurableEnvironment（上下文环境），同时为后面逻辑所使用
+        - 创建上下文Context（ConfigurableApplicationContext），然后做一些初始化工作，包括Initializer的通知
+        - 刷新上述的Context，以启动Spring容器和内置的Servlet容器
+        - 最后执行Runner，包括常用的CommandLineRunner和ApplicationRunner，可以做自定义的初始化动作
+        - 上述的整个过程中，启动到达不同阶段时，会发送相应事件，以便Listener处理。
+- 平时开发中都用哪些注解？
+    - @RestController、@Service、@Repository、@Component、@Bean、@ConditionalOnXxx、@ComponentScan
+46. spring中Bean的作用域，springMVC的controller是线程安全的吗？怎么去保证线程安全呢？ [Spring Boot启动流程概述-面试](https://blog.csdn.net/qq_35119422/article/details/81559410) [SpringBoot启动流程总结](https://blog.csdn.net/mnicsm/article/details/93893669)
 - 略
-Spring的生命周期吧
-- 同 Bean 的生命周期。Bean、Spring、BeanFactory、FactoryBean的生命周期都这么回答
-Spring的单例是怎么实现的？
-- 单例注册表，本质上是个HashMap，通过通过在适当位置对hashMap进行加锁以实现并发安全
-SpringMVC不同用户登录的信息怎么保证线程安全的？
-- ThreadLocal来实现即可
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-21.说一下springboot的启动过程？平时开发中都用哪些注解？
-spring容器的启动过程？2
- 
-12、spring中Bean的作用域，springMVC的controller是线程安全的吗？怎么去保证线程安全呢？
- 
-Spring的生命周期吧
- 
-Spring的单例是怎么实现的？
- 
-SpringMVC不同用户登录的信息怎么保证线程安全的？
+- Spring的生命周期吧
+    - 同 Bean 的生命周期。Bean、Spring、BeanFactory、FactoryBean的生命周期都这么回答
+- Spring的单例是怎么实现的？
+    - 单例注册表，本质上是个HashMap，通过通过在适当位置对hashMap进行加锁以实现并发安全
+- SpringMVC不同用户登录的信息怎么保证线程安全的？
+    - ThreadLocal来实现即可
