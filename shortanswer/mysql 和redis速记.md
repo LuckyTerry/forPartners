@@ -18,7 +18,21 @@
 | ... | ... | 修改且提交事务 | ... |
 | 快照读 | ... | ... | ... |
 | ... | 修改且提交事务 | ... | 修改且提交事务 |
+
 对于以上这个序列，事务1快照读的ReadView是：up_limit_id=2，low_limit_id=5，tr_list包括(2, 4)，tr_current_id=3。3在2、5之间且不在list中，因此可见。
+
+3. innoDB的RR到底是否解决了幻读？
+- 结论：innodb在快照读的情况下并没有真正的避免幻读, 但是在当前读的情况下避免了不可重复读和幻读!!!
+- 原因：
+    - 在如果事务B在事务A执行中, insert了一条数据并提交, 事务A再次查询, 虽然读取的是undo中的旧版本数据(防止了部分幻读), 但是事务A中执行update或者delete都是可以成功的!!
+    - 在RR级别下，快照读是通过MVVC(多版本控制)和undo log来实现的，当前读是通过加record lock(记录锁)和gap lock(间隙锁)来实现的。
+    - MySQL（innodb）的选择是允许在快照读之后执行当前读，并且更新 snapshot 镜像的版本。严格来说，这个结果违反了 repeatable read 隔离级别，，但是 who cares 呢，毕竟官方都说了：“This is not a bug but an intended and documented behavior.”
+
+[MVCC 能解决幻读吗？](https://www.cnblogs.com/twoheads/p/10703023.html)
+
+[看完本文，别再说不知道Mysql怎么解决幻读了](https://zhuanlan.zhihu.com/p/83584160)
+
+[既然MySQL中InnoDB使用MVCC，为什么REPEATABLE-READ不能消除幻读？](https://www.zhihu.com/question/334408495/answer/860085549)
 
 4. 字符集及校对规则
 - 字符集指的是一种从二进制编码到某类字符符号的映射
