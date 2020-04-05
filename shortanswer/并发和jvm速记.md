@@ -167,6 +167,12 @@
 - 内存泄漏问题
     - WeakRefence导致的内存泄漏，需要使用try/finally方式进行调用和remove
     - 虽然我们总说是WeakRefence导致的内存泄漏，但其实并不是。不管采用强引用还是弱引用，在各自场景下都存在内存泄漏的问题，只不过采用弱引用问题小一些。本质上，是由于ThreadLocalMap的生命周期跟Thread一样长，如果没有手动删除对应key的value就会导致内存泄漏
+- 关于内存泄漏我自己的理解
+    - 第一，为什么要设置为WeakReference？
+        - 假设使用强引用：一个傻傻的码农在方法中 new 了个本地变量 threadLocal 并 setValue，然后方法执行完了。之后由于外界拿不到threadLocal的引用了，无法访问到threadLocalMap中的entry，造成内存泄漏；但是聪明的码农都是用static threadLocal定义的，所以之所以定义为WeakRef，就是为了防止出现最坏情况。
+        - 而当使用WeakRef时：方法结束后threadLocal强引用消失，此时仅有threadLocalMap中还存在对threadLocal的弱引用，遇上了YGC便回收了threadLocal。虽然也造成了内存泄漏，但是 null key 给了源码“判断可以清除”的依据。
+    - 第二，平时都是定义的 static ThreadLocal，会触发threadLocalMap#Entry的theadLocal弱引用回收导致取不到value吗？
+        - 不会的！因为外部还有 static 强引用，WeakRef只会在“对象没有其他强引用”的情况下才会被回收！
 11. 线程池
 - 为什么要用线程池
     - 降低资源消耗：因为可以 复用已创建的线程降低线程创建和销毁带来的消耗
