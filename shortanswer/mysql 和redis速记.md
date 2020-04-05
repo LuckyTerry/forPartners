@@ -34,6 +34,10 @@
 
 [既然MySQL中InnoDB使用MVCC，为什么REPEATABLE-READ不能消除幻读？](https://www.zhihu.com/question/334408495/answer/860085549)
 
+3. 什么是数据库第一类第二类丢失更新？[数据库第一类第二类丢失更新](https://blog.csdn.net/paopaopotter/article/details/79259686)
+- 第一类丢失更新，也称“回滚丢失”
+- 第二类丢失更新，也称“覆盖丢失”
+- 支持事务的数据库都不存在第一类，只会有第二类问题。可以通过“悲观锁 select for update”或“乐观锁 some version number”来解决
 4. 字符集及校对规则
 - 字符集指的是一种从二进制编码到某类字符符号的映射
 - 校对规则则是指某种字符集下的排序规则
