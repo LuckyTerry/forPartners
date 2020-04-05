@@ -204,6 +204,10 @@
 - 线程池大小确定
     - 一般而言，cpu密集型为cpu+1，io密集型2*cpu+1；
     - 但是，实际工作中，是模拟线上环境，进行压力测试，使用visualVM观察线程的状态，并不断调整线程数得到的。
+- BlockingQueue的选择 [线程池的三种队列区别](https://blog.csdn.net/qq_26881739/article/details/80983495?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1)
+    - SynchronousQueue，无缓冲等待队列，通常要求maximumPoolSize无界（在某次添加元素后必须等待其他线程取走后才能继续添加）
+    - LinkedBlockingQueue，无界缓存等待队列，相当于maxSize无效
+    - ArrayBlockingQueue，有界缓存等待队列，生产上一般用这个，避免无界的元素和无界的线程导致OOM
 12. Atomic原子类
 - 介绍
     - 原子，一组操作要么都执行，要么都不执行
