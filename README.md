@@ -32,7 +32,7 @@
 
 [IO，java8，规范，设计模式速记](./shorthand/IO，java8，规范，设计模式速记.md) 
 
-[mysql和redis速记](./shorthand/mysql 和redis速记.md) 
+[mysql和redis速记](.shorthand/mysql%20和redis速记.md) 
 
 [Spring速记](./shorthand/Spring速记.md) 
 
@@ -44,7 +44,27 @@
 
 ## 答案
 
-todo
+[java基础速记](./shortanswer/java基础速记.md) 
+
+[并发和jvm速记](./shortanswer/并发和jvm速记.md) 
+
+[计算机网络和操作系统速记](./shortanswer/计算机网络和操作系统速记.md) 
+
+[集合速记](./shortanswer/集合速记.md) 
+
+[数据结构与算法速记](./shortanswer/数据结构与算法速记.md) 
+
+[IO，java8，规范，设计模式速记](./shortanswer/IO，java8，规范，设计模式速记.md) 
+
+[mysql和redis速记](.shortanswer/mysql%20和redis速记.md) 
+
+[Spring速记](./shortanswer/Spring速记.md) 
+
+[SpringCloud速记](./shortanswer/SpringCloud速记.md) 
+
+[mq，网关，限流，ZooKeeper，高可用速记](./shortanswer/mq，网关，限流，ZooKeeper，高可用速记.md) 
+
+[认证授权，SSO，分布式，基础速记](./shortanswer/认证授权，SSO，分布式，基础速记.md) 
 
 ## 补充
 
@@ -72,25 +92,25 @@ scrum、白板站会、代码审查、分支规范、项目管理、协同工作
 
 ### 一些代码
 
-[Stream实战指南]{}
+[Stream实战指南](./code/Stream实战指南.md)
 
 ## 案例
 
 来源：牛客网、个人案例
 
-[阿里巴巴]{}
+[阿里巴巴](./cases/alibaba)
 
-[字节跳动]{}
+[字节跳动](./cases/bytedance)
 
-[多点]{}
+[多点](./cases/dmall)
 
-[兰亭集势]{}
+[兰亭集势](./cases/lating)
 
-[OPPO]{}
+[OPPO](./cases/oppo)
 
-[腾讯]{}
+[腾讯](./cases/tencent)
 
-[XXX]{}
+[XXX](./cases/xxx)
 
 ## 说明
 
