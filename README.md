@@ -18,6 +18,16 @@
 
 **铭谢** [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide) 项目
 
+补充 
+
+[CS-Notes](https://github.com/CyC2018/CS-Notes) 如下这三部分
+- [剑指 Offer 题解](https://github.com/CyC2018/CS-Notes/blob/master/notes/%E5%89%91%E6%8C%87%20Offer%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
+- [Leetcode 题解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
+- [算法](https://github.com/CyC2018/CS-Notes/blob/master/notes/%E7%AE%97%E6%B3%95%20-%20%E7%9B%AE%E5%BD%95.md)
+
+
+和 [interview_internal_reference](https://github.com/0voice/interview_internal_reference)的算法部分
+
 ## 速记
 
 [java基础速记](./shorthand/java基础速记.md) 
@@ -70,7 +80,7 @@
 
 ### 架构图
 
-![image](https://github.com/LuckyTerry/forPartners/blob/master/images/1.png)
+略
 
 ### 线上部署
 
@@ -96,21 +106,14 @@ scrum、白板站会、代码审查、分支规范、项目管理、协同工作
 
 ## 案例
 
-来源：牛客网、个人案例
+来源：
 
-[阿里巴巴](./cases/alibaba)
+- 牛客网：[腾讯](https://www.nowcoder.com/discuss/tag/138?order=3&type=2&expTag=639&query=)、[蚂蚁金服](https://www.nowcoder.com/discuss/tag/931?order=3&type=2&expTag=0&query=)、[字节跳动](https://www.nowcoder.com/discuss/tag/665?order=3&type=2&expTag=639&query=)
+- 个人案例：略
 
-[字节跳动](./cases/bytedance)
+针对于面试案例，补充了个人认为的答案，如下：
 
-[多点](./cases/dmall)
-
-[兰亭集势](./cases/lating)
-
-[OPPO](./cases/oppo)
-
-[腾讯](./cases/tencent)
-
-[XXX](./cases/xxx)
+[阿里巴巴](./cases/alibaba)、[字节跳动](./cases/bytedance)、[腾讯](./cases/tencent)
 
 ## 说明
 
