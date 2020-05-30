@@ -1,0 +1,5 @@
+
+select sc.id,st.subject, sum(sc.score) total from interview.score sc
+inner join interview.student st on st.id = sc.id
+where sc.year = 2017
+group by sc.id, st.subject order by total desc limit 1;

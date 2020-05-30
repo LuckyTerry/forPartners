@@ -5,34 +5,6 @@
 - [背景](#背景)
 - [铭谢](#铭谢)
 - [速记](#速记)
-- [网络](#网络)
-- [操作系统](#操作系统)
-    - [Linux](#linux)
-- [数据结构与算法](#数据结构与算法)
-    - [数据结构](#数据结构)
-    - [算法](#算法)
-- [设计原则与模式](#设计原则与模式)
-- [Java](#java)
-    - [基础](#基础)
-    - [集合](#集合)
-    - [并发](#并发)
-    - [JVM](#jvm)
-    - [泛型](#泛型)
-    - [反射](#反射)
-    - [IO](#IO)
-    - [Java 8](#Java 8)
-    - [Java内存模型](#Java内存模型)
-    - [Java线程模型](#Java线程模型)
-    - [JVM线程模型](#JVM线程模型)
-    - [其他](#其他)
-- [Web方向](#Web方向)
-- [Java方向](#Java方向)
-- [Android方向](#Android方向)
-- [公司推荐](#公司推荐)
-- [工具](#工具)
-    - [Git](#git)
-    - [Docker](#docker)
-    - [其他](#其他)
 - [说明](#说明)
     - [JavaGuide介绍](#javaguide介绍)
     - [关于转载](#关于转载)
@@ -54,200 +26,73 @@
 
 [计算机网络和操作系统速记](./shorthand/计算机网络和操作系统速记.md) 
 
+[集合速记](./shorthand/集合速记.md) 
+
 [数据结构与算法速记](./shorthand/数据结构与算法速记.md) 
 
 [IO，java8，规范，设计模式速记](./shorthand/IO，java8，规范，设计模式速记.md) 
 
-## 网络
+[mysql和redis速记](./shorthand/mysql 和redis速记.md) 
 
-- TCP
-- UDP
-- HTTPS
-- WebSocket
+[Spring速记](./shorthand/Spring速记.md) 
 
-1. [计算机网络常见面试题](docs/network/计算机网络.md)
-2. [计算机网络基础知识总结](docs/network/干货：计算机网络知识总结.md)
-3. [HTTPS中的TLS](docs/network/HTTPS中的TLS.md)
+[SpringCloud速记](./shorthand/SpringCloud速记.md) 
 
-## 操作系统
+[mq，网关，限流，ZooKeeper，高可用速记](./shorthand/mq，网关，限流，ZooKeeper，高可用速记.md) 
 
-操作系统相关概念总结
+[认证授权，SSO，分布式，基础速记](./shorthand/认证授权，SSO，分布式，基础速记.md) 
 
-### Linux
+## 答案
 
-* [后端程序员必备的 Linux 基础知识](docs/operating-system/后端程序员必备的Linux基础知识.md)  
-* [Shell 编程入门](docs/operating-system/Shell.md) 
+todo
 
-## 数据结构与算法
+## 补充
 
-### 数据结构
+### 架构图
 
-- [不了解布隆过滤器？一文给你整的明明白白！](docs/dataStructures-algorithms/data-structure/bloom-filter.md)
-- [数据结构知识学习与面试](docs/dataStructures-algorithms/数据结构.md)
+![image](https://github.com/LuckyTerry/forPartners/blob/master/images/1.png)
 
-### 算法
+### 线上部署
 
-- [算法学习资源推荐](docs/dataStructures-algorithms/算法学习资源推荐.md)  
-- [几道常见的字符串算法题总结 ](docs/dataStructures-algorithms/几道常见的子符串算法题.md)
-- [几道常见的链表算法题总结 ](docs/dataStructures-algorithms/几道常见的链表算法题.md)   
-- [剑指offer部分编程题](docs/dataStructures-algorithms/剑指offer部分编程题.md)
-- [公司真题](docs/dataStructures-algorithms/公司真题.md)
-- [回溯算法经典案例之N皇后问题](docs/dataStructures-algorithms/Backtracking-NQueens.md)
+request -> dns -> loadBalancer -> nginx -> gateway -> aggregation -> service -> repository 
 
-## 设计原则与模式
+### 持续开发集成
 
-TODO
+- [持续集成之理论篇](https://zhuanlan.zhihu.com/p/57021068)
 
-设计模式 :[设计模式系列文章](docs/system-design/设计模式.md)
+Start -> 获取JenkinsCICD文件 -> 拉取代码 -> mvn打包 -> 获取Dockerfile和yaml文件 -> 制作并上传Docker镜像 -> 部署服务 -> 清空工作区 -> End
 
-## Java
+### 个人真实案例
 
-### 基础
+亲自经历的优化点、问题解决案例
 
-**基础知识系统总结：**
+### 团队管理
 
-1. **[Java 基础知识](docs/java/Java基础知识.md)**
-2. **[Java 基础知识疑难点/易错点](docs/java/Java疑难点.md)**
-3. [【加餐】一些重要的Java程序设计题](docs/java/Java程序设计题.md)
-4. [【选看】J2EE 基础知识](docs/java/J2EE基础知识.md)
+scrum、白板站会、代码审查、分支规范、项目管理、协同工作
 
-**重要知识点详解：**
+### 一些代码
 
-1. [枚举](docs/java/basic/用好Java中的枚举真的没有那么简单.md) （很重要的一个数据结构，用好枚举真的没有那么简单！）
-2. [Java 常见关键字总结：final、static、this、super!](docs/java/basic/final、static、this、super.md)
-3. [什么是反射机制?反射机制的应用场景有哪些?](docs/java/basic/reflection.md)
+[Stream实战指南]{}
 
-**其他：**
+## 案例
 
-1. [JAD反编译](docs/java/JAD反编译tricks.md)
+来源：牛客网、个人案例
 
-### 集合
+[阿里巴巴]{}
 
-1. **[Java容器常见面试题/知识点总结](docs/java/collection/Java集合框架常见面试题.md)**
-2. [ArrayList 源码](docs/java/collection/ArrayList.md)  、[LinkedList 源码](docs/java/collection/LinkedList.md)   、[HashMap(JDK1.8)源码](docs/java/collection/HashMap.md)  
+[字节跳动]{}
 
-### 并发
+[多点]{}
 
-- CAS
-- 乐观锁和悲观锁
+[兰亭集势]{}
 
-**面试题总结：**
+[OPPO]{}
 
-1. **[Java 并发基础常见面试题总结](docs/java/Multithread/JavaConcurrencyBasicsCommonInterviewQuestionsSummary.md)**
-2. **[Java 并发进阶常见面试题总结](docs/java/Multithread/JavaConcurrencyAdvancedCommonInterviewQuestions.md)**
+[腾讯]{}
 
-**必备知识点：**
-
-1. [并发容器总结](docs/java/Multithread/并发容器总结.md)
-2. **[Java线程池学习总结](./docs/java/Multithread/java线程池学习总结.md)**
-3. [乐观锁与悲观锁](docs/essential-content-for-interview/面试必备之乐观锁与悲观锁.md)
-4. [JUC 中的 Atomic 原子类总结](docs/java/Multithread/Atomic.md)
-5. [AQS 原理以及 AQS 同步组件总结](docs/java/Multithread/AQS.md)
-6. [JUC包实战指南](docs/java/Multithread/JUC包实战指南.md)
-
-### JVM
-
-1. **[Java内存区域](docs/java/jvm/Java内存区域.md)**
-2. **[JVM垃圾回收](docs/java/jvm/JVM垃圾回收.md)**
-3. [JDK 监控和故障处理工具](docs/java/jvm/JDK监控和故障处理工具总结.md)
-4. [类文件结构](docs/java/jvm/类文件结构.md)
-5. **[类加载过程](docs/java/jvm/类加载过程.md)**
-6. [类加载器](docs/java/jvm/类加载器.md)
-7. **[【待完成】最重要的 JVM 参数指南（翻译完善了一半）](docs/java/jvm/最重要的JVM参数指南.md)**
-8. [JVM 配置常用参数和常用 GC 调优策略](docs/java/jvm/GC调优参数.md)
-9. **[【加餐】大白话带你认识JVM](docs/java/jvm/[加餐]大白话带你认识JVM.md)**
-
-### 泛型
-
-- 类型擦除
-- 协变逆变（PECS）
-
-TODO
-
-### IO
-
-- BIO
-- NIO
-- selct
-- epoll
-- netty nio
-
-TODO
-
-**I/O** ：[BIO,NIO,AIO 总结 ](docs/java/BIO-NIO-AIO.md)
-
-### Java 8
-
-- 函数式接口
-- Stream流
-
-TODO
-
-**Java 8**  ：
-
-[Java 8 新特性总结](docs/java/What's%20New%20in%20JDK8/Java8Tutorial.md)
-
-[Java 8 学习资源推荐](docs/java/What's%20New%20in%20JDK8/Java8教程推荐.md)
-
-[Java8 forEach 指南](docs/java/What's%20New%20in%20JDK8/Java8foreach指南.md)
-
-[Stream实战指南](docs/java/What's%20New%20in%20JDK8/Stream实战指南.md)
-
-### Java内存模型
-
-TODO
-
-### Java线程模型
-
-TODO
-
-### JVM线程模型
-
-TODO
-
-### 其他
-
-**[Java 编程规范以及优雅 Java 代码实践总结](docs/java/Java编程规范.md)**
-
-
-## 面试指南
-
-1. **[【备战面试1】程序员的简历就该这样写](docs/essential-content-for-interview/PreparingForInterview/程序员的简历之道.md)**
-2. **[【备战面试2】初出茅庐的程序员该如何准备面试？](docs/essential-content-for-interview/PreparingForInterview/interviewPrepare.md)**
-3. **[【备战面试3】7个大部分程序员在面试前很关心的问题](docs/essential-content-for-interview/PreparingForInterview/JavaProgrammerNeedKnow.md)**
-4. **[【备战面试4】Github上开源的Java面试/学习相关的仓库推荐](docs/essential-content-for-interview/PreparingForInterview/JavaInterviewLibrary.md)**
-5. **[【备战面试5】如果面试官问你“你有什么问题问我吗？”时，你该如何回答](docs/essential-content-for-interview/PreparingForInterview/面试官-你有什么问题要问我.md)**
-6. [【备战面试6】应届生面试最爱问的几道 Java 基础问题](docs/essential-content-for-interview/PreparingForInterview/应届生面试最爱问的几道Java基础问题.md)
-7. **[【备战面试6】美团面试常见问题总结(附详解答案)](docs/essential-content-for-interview/PreparingForInterview/美团面试常见问题总结.md)**
-8. **[【备战面试7】一些刁难的面试问题总结](https://xiaozhuanlan.com/topic/9056431872)**
-
-## Web方向
-
-[Web方向](./README_WEB.md)
-
-## Java方向
-
-[Java方向](./README_JAVA.md)
-
-## Android方向
-
-[Android方向](./README_ANDROID.md)
-
-## 公司推荐
-
-[公司推荐](docs/company.md)
-
-## 工具
-
-### Git
-
-* [Git入门](docs/tools/Git.md)
+[XXX]{}
 
 ## 说明
-
-### 关于转载
-
-如果你需要转载本仓库的一些文章到自己的博客的话，记得注明原文地址，并且注明借鉴项目Java-Guide的原文地址就可以了。
 
 ### Contributor
 
