@@ -113,7 +113,7 @@ scrum、白板站会、代码审查、分支规范、项目管理、协同工作
 
 针对于面试案例，补充了个人认为的答案，如下：
 
-（必看！！！）[阿里巴巴](./cases/alibaba)、[字节跳动](./cases/bytedance)、[腾讯](./cases/tencent)（必看！！！）
+（必看！！！）[腾讯](./cases/tencent)、[阿里巴巴](./cases/alibaba)、[字节跳动](./cases/bytedance)（必看！！！）
 
 ## 说明
 
