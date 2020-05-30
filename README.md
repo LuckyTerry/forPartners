@@ -16,7 +16,7 @@
 
 ## 铭谢
 
-**铭谢** [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide) 项目
+**铭谢** [Snailclimb/JavaGuide](https://github.com/Snailclimb/JavaGuide) 项目（必看！！！）
 
 补充 
 
@@ -52,7 +52,7 @@
 
 [认证授权，SSO，分布式，基础速记](./shorthand/认证授权，SSO，分布式，基础速记.md) 
 
-## 答案
+## 答案（必看！！！）
 
 [java基础速记](./shortanswer/java基础速记.md) 
 
@@ -113,7 +113,7 @@ scrum、白板站会、代码审查、分支规范、项目管理、协同工作
 
 针对于面试案例，补充了个人认为的答案，如下：
 
-[阿里巴巴](./cases/alibaba)、[字节跳动](./cases/bytedance)、[腾讯](./cases/tencent)
+（必看！！！）[阿里巴巴](./cases/alibaba)、[字节跳动](./cases/bytedance)、[腾讯](./cases/tencent)（必看！！！）
 
 ## 说明
 
