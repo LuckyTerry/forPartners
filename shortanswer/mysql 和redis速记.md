@@ -215,6 +215,13 @@
 57. 如何解决 Redis 的并发竞争 Key 问题
 - 使用分布式锁，如zk实现的锁
 58. 如何保证缓存与数据库双写时的数据一致性?
+- https://bytetech.info/articles/7110509108775616549?from=lark_all_search#doxcnZ0emQKp7HzhEBa6UxAB2De
+- Cache aside
+- 补偿机制
+- Read-Through
+- Write-Through
+- Write-Behind
+- Write-Around
 - 读请求：先读缓存，缓存没有的话，就读数据库，然后取出数据后放入缓存，同时返回响应。
 - 写请求：先删除缓存，然后再更新数据库(避免大量地写、却又不经常读的数据导致缓存频繁更新)。
 59. RedLock   Redlock为什么不可靠
